@@ -9,10 +9,20 @@
 </head>
 
 <body>
-    <h1>Game</h1>
+    <div class="game-panel">
+        <div class="item">
+            <span>Attempts:</span>
+            <span>10</span>
+        </div>
+        <div class="item">
+            <span>Score:</span>
+            <span>0</span>
+        </div>
+    </div>
     <div class="game">
         <div class="table">
-            <img src="src/img/stakan.png" alt="">
+            <img class="cup cup-1" src="src/img/stakan.png" alt="" onclick="cup(1)">
+            <img class="cup cup-2" src="src/img/stakan.png" alt="" onclick="cup(2)">
         </div>
     </div>
     <script src="src/main.js"></script>

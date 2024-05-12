@@ -5,11 +5,12 @@ body {
 }
 
 .game {
-    background-color: rgb(1, 1, 6);
     min-height: 100px;
     display: flex;
+    margin-top: 20px;
 
 }
+
 .table {
     width: 600px;
     height: 500px;
@@ -18,5 +19,34 @@ body {
     background-image: url(img/table.jpg);
     background-size: cover;
     border-radius: 150px;
+    position: relative;
+}
+
+.cup {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cup-1 {
+    left: 105px;
+    top: 150px;
+}
+
+.cup-2 {
+    left: 345px;
+    top: 150px;
+}
+
+.game-panel {
+    background-color: darkgray;
+    min-height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
 
 }
