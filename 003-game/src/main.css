@@ -48,5 +48,20 @@ body {
     border-radius: 10px;
     width: 600px;
     margin: auto;
-
 }
+.animation-1{
+    animation: name-of-animation 2s infinite;
+}
+@keyframes name-of-animation {
+    0%    { left: 80px; }
+    50%   { left: 280px; }
+    100%  { left: 80px; }
+  }
+  .animation-2{
+    animation: name-of-animation-2 2s infinite;
+}
+@keyframes name-of-animation-2 {
+    0%    { left: 380px; }
+    50%   { left: 120px; }
+    100%  { left: 380px; }
+  }
