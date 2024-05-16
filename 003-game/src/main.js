@@ -8,8 +8,17 @@ function cup(n) {
     console.log(attemptsNode)
     attemptsNode.innerHTML = attempts;
     console.log("cup", n, attempts);
-    if (bollPosition == n) alert("cool u find it");
-    else alert("No man not your day");
+    if (bollPosition == n) {
+        score++
+        const scoreNode = document.querySelector("#score")
+        console.log(attemptsNode)
+        scoreNode.innerHTML = score;    
+        alert("cool u find it")
+     } else alert("No man not your day");
     bollPosition = Math.round(Math.random()) + 1;
     console.log(bollPosition);
+    if (attempts==0){
+        alert("Game over")
+        location.reload()
+    }
 }
