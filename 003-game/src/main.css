@@ -50,15 +50,15 @@ body {
     margin: auto;
 }
 .animation-1{
-    animation: name-of-animation 2s infinite;
+    animation: name-of-animation 1.5s infinite;
 }
 @keyframes name-of-animation {
     0%    { left: 80px; }
-    50%   { left: 280px; }
+    50%   { left: 350px; }
     100%  { left: 80px; }
   }
   .animation-2{
-    animation: name-of-animation-2 2s infinite;
+    animation: name-of-animation-2 1.6s infinite;
 }
 @keyframes name-of-animation-2 {
     0%    { left: 380px; }
