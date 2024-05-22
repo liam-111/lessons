@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button onclick="add()">Add</button>
+    <script>
+        const tasks=[]
+        function add(){
+            const inputElement=document.querySelector("input")
+            console.log(inputElement)
+            const text=inputElement.value
+            console.log(text)
+            inputElement.value=""
+            const newTask={text,isDone:false}
+            tasks.push(newTask)
+            console.log(tasks)
+        }
+    </script>
+</body>
+</html>
