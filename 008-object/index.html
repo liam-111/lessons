@@ -5,24 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        span {
+            background:red;
+            height: 1rem;
+            width: 1rem;
+            display: flex;
+            border-radius: 1rem;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 100px; left: 100px;
+            
+        }
+    </style>
 </head>
 
 <body>
-    <button onclick="moveX()">x+</button>
-    <button>x-</button>
-    <button>y+</button>
-    <button>y-</button>
+    <button onclick="moveX(true)">x+</button>
+    <button onclick="moveX(false)">x-</button>
+    <button onclick="moveY(true)">y+</button>
+    <button onclick="moveY(false)">y-</button>
+    <span>x</span>
     <script>
+        const log = console.log
         const label = {
             x: 100,
             y: 100
         }
-        function moveX() {
-            label.x = label.x + 10
-            console.log(label)
+        function moveX(isTrue) {
+            if (isTrue) label.x = label.x + 10
+            else label.x = label.x - 10
+            log(label)
+            render()
         }
-        function moveY() {
-            label.y = label.y + 10
+        function moveY(isTrue) {
+            if (isTrue) label.y = label.y + 10
+            else label.y = label.y - 10
+            log(label)
+            render()
+        }
+        function render (){
+        const spanElement=document.querySelector("span")
+        spanElement.style.left=label.x+"px"
+        spanElement.style.top=label.y+"px"
+
         }
     </script>
 </body>
