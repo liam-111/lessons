@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         span {
-            background:red;
+            background: red;
             height: 1rem;
             width: 1rem;
             display: flex;
@@ -15,8 +15,9 @@
             justify-content: center;
             align-items: center;
             position: fixed;
-            top: 100px; left: 100px;
-            
+            top: 100px;
+            left: 100px;
+
         }
     </style>
 </head>
@@ -45,10 +46,10 @@
             log(label)
             render()
         }
-        function render (){
-        const spanElement=document.querySelector("span")
-        spanElement.style.left=label.x+"px"
-        spanElement.style.top=label.y+"px"
+        function render() {
+            const spanElement = document.querySelector("span")
+            spanElement.style.left = label.x + "px"
+            spanElement.style.top = label.y + "px"
 
         }
     </script>
