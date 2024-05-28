@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner {
+            min-width: 100px;
+            min-height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteiner"></div>
+    <button onclick="add()">add element to container</button>
+    <script>
+        function add() {
+            const container = document.querySelector(".conteiner")
+            container.innerHTML += "done"
+        }
+    </script>
+</body>
+
+</html>

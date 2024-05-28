@@ -1,10 +1,7 @@
-function getBubls() {
-    return document.querySelectorAll(".buble")
-}
 function randominzer() {
-    const bubls = getBubls()
+    const bubls = document.querySelectorAll(".buble")
     console.log(bubls)
-    bubls.forEach(function (b) {
+    bubls.forEach(function(b) {
         console.log(b)
         b.style.left = Math.round(Math.random() * 800)+"px"
         b.style.top = Math.round(Math.random() * 800)+"px"
@@ -12,4 +9,4 @@ function randominzer() {
 }
 setInterval(function () {
     randominzer()
-}, 700)
+}, 2000)
